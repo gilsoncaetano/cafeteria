@@ -1,0 +1,65 @@
+* {
+  margin: 0; /* zera a margem externa dos elementos  */
+  padding: 0; /*Zerar a margem interna dos elementos*/
+}
+
+header {
+  /* vamos adicionar uma imagem de fundo ao cabeçalho */
+  background-image: url("../img/fundo5.jpg");
+  background-position: 0px -400px;
+  height: 300px;
+  transition: ease 1s;
+}
+
+h1 {
+  color: rgb(2, 65, 11);
+  text-align: center;
+  font-family: "PT Serif"; /* fonte da letra */
+  font-size: 46pt; /*tamano da fonte */
+  padding-top: 100px;
+  text-shadow: 5px 5px 10px rgb(243, 247, 13);
+}
+/* Vamos formatar os elementos de li para ficar 
+um ao lado do outro com o comando display */
+nav ul li {
+  /* Dispor os links um ao lado do outro  */
+  display: inline-block;
+  /*border: 1px solid red;*/
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/* Alinha os elementos de link ao centro usado 
+text-alingn:center no nav, assim tudo que estiver
+dentro do nav irá para o centro */
+
+nav {
+  text-align: center;
+  margin-top: 80px;
+  /* A cor utilizada para o fundo da nav foi o rgba, que 
+  significa red green blue e alpha(transparência), onde 
+   o valor mais proximo do 0(zero) é totalmente solido. Neste caso
+   estamos usando 80% de solidez, ou seja, aplicamos 
+   20% de transparêcia */
+  background-color: rgb(233, 233, 233, 0.7);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul li a {
+  color: rgb(4, 44, 56);
+  /* Para retira o sublinado(underline) dos links
+    utilizaremos o comando text-decoraion com o valor
+    none(nenhum) */
+  text-decoration: none;
+  font-family: "Alfa Slab One";
+  /* Aplicação de negrito a letra */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  /*color: rgb(179, 157, 157);*/
+  padding-left: 10px;
+  padding-right: 10px;
+  /*background-color: rgb(13, 161, 247);*/
+}
