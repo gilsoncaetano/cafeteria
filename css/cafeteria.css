@@ -40,9 +40,9 @@ nav {
    o valor mais proximo do 0(zero) é totalmente solido. Neste caso
    estamos usando 80% de solidez, ou seja, aplicamos 
    20% de transparêcia */
-  background-color: rgb(233, 233, 233, 0.7);
+  background-color: rgba(128, 24, 24, 0.9);
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 9pt;
 }
 
 nav ul li a {
@@ -51,7 +51,7 @@ nav ul li a {
     utilizaremos o comando text-decoraion com o valor
     none(nenhum) */
   text-decoration: none;
-  font-family: "Alfa Slab One";
+  font-family: "Lobster";
   /* Aplicação de negrito a letra */
   font-weight: bold;
 }
@@ -67,7 +67,7 @@ nav ul li a:hover {
 /* Criação da formatação do rodapé (footer) */
 
 footer {
-  background-color: rgb(243, 247, 13);
+  background-color: rgb(39, 39, 26);
   text-align: center;
   color: rgb(241, 241, 46);
   font-family: "Lobster";
@@ -84,4 +84,117 @@ div ul li {
 div a {
   color: rgb(7, 113, 128);
   text-decoration: none;
+}
+
+main {
+  /* Vamos aplicar uma margem interna de 30px utilizamos o comando padding */
+
+  padding: 30px;
+}
+
+h2 {
+  font-family: "Alfa Slab One";
+  color: rgba(134, 3, 3);
+  font-size: 26px;
+  border-bottom: 8px double rgb(248, 248, 38);
+  padding-left: 100px; /*pidding-left empura oque tem dentro da caixa*/
+  margin-left: 25px; /* margin-left empura toda a caixa*/
+  margin-bottom: 45px;
+}
+
+h3 {
+  font-family: Lobster;
+  margin-left: 70px;
+  font-size: 26pt;
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+p {
+  padding-left: 70px;
+  padding-right: 70px;
+  text-align: justify;
+
+  /* Aplicaremos uma comando que aumenta a altura sa linha. Esse efeito
+  simula o espaçamento entre linhas encontrado no word. O comando é linha-height -> linha height */
+
+  line-height: 30px;
+  margin-bottom: 26px;
+  font-family: "PT Serif";
+  font-size: 15pt;
+}
+
+#home {
+  /*  */
+  text-align: center;
+}
+
+#home img {
+  height: 450px;
+  width: 450px;
+  margin: 10px;
+
+  /* Vamos aplicar um efeito de transparência com a comando opacity.  Onde os valores 1
+  é totalmente visivel e 0 é totalmente transparente   */
+
+  opacity: 0.5;
+  border-radius: 15%;
+  transition: ease 2s; /* aplica efeito da imagem*/
+}
+
+#home img:hover {
+  /* Aplicar eefeito quando passa o mauser em sima da imagem*/
+  opacity: 1;
+  transform: scale(1.2);
+  cursor: pointer;
+  /*transform: rotate(360deg);*/
+  transform: rotate(360deg);
+}
+
+#acafeteria {
+  text-align: center;
+}
+#acabeteria img {
+  width: 500px;
+  height: 400px;
+}
+#video {
+  text-align: center;
+}
+
+/* Abaixo a formatação para a página cardápio */
+#contanier,
+#linha,
+#imagem,
+#texto {
+  /* border: 1px solid red; */
+}
+
+#contanier {
+  display: inline-block;
+}
+
+#linha {
+  display: table;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+#imagem img {
+  width: 200px;
+  height: 200px;
+}
+#imagem {
+  width: 200px;
+  height: 200px;
+
+  /*fazer a imagem frutuar*/
+  float: left;
+}
+
+#texto {
+  padding: 20px;
+  width: 70%;
+  float: left;
 }
