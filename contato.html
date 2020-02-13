@@ -35,7 +35,56 @@ elementos:
     </header>
 
     <!-- A estrutura da área main fica reservada ao conteudo das páginas específicas -->
-    <main></main>
+    <main>
+
+      <h2>Contato</h2>
+
+      <!-- action e a pagána que recebe os dados do formulario -->
+
+       <form action="Confirmalção.html">
+         
+        <label> Nome* </label>
+        <input type="text" name="nome" placeholder="Nome Completo" required>
+
+
+        <label> E-Mail *</label>
+        <input type="email" name="email" placeholder="exemplo@dominio.com.br" required>
+
+        <label> Telefone </label>
+        <input type="tel"  name="telefone">
+
+        <label>Sexo</label>
+        <span id="sexo">
+          <input type="radio" name="sexe" value="Masculino"> Masculino
+          <input type="radio" name="sexe" value="Feminino"> Feminino
+          <input type="radio" name="sexe" value="Outros"> Outros
+        </span>
+
+        <select name="assunto">
+          <option value="Selecione "> Selecione o Assunto</option>
+          <option value="Elogio"> Elogio</option>
+          <option value=" Sugestão"> Sugestão</option>
+          <option value="Reclamação"> Reclamação</option>
+          <option value="Problrmas">Problemas</option>
+        </select>
+
+        <label>Mensagem</label>
+        <textarea name="mensagem"></textarea>
+
+        <span id="check"><input type="checkbox" name="newsletter">
+          Desejo receber mensagens e notícias sobre promoções e eventos em meu
+          e-mail e telefone.
+        </span>
+
+
+        <!-- botão para salva ou para continuar -->
+        <input type="submit" value="Enviar">
+
+        
+        
+       </form> 
+
+    </main>
 
     <!-- 
     Criação da área do rodapé com o comando footer. Esta área se destina 

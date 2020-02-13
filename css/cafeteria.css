@@ -42,7 +42,7 @@ nav {
    20% de transparêcia */
   background-color: rgba(128, 24, 24, 0.9);
   padding-top: 10px;
-  padding-bottom: 9pt;
+  padding-bottom: 8pt;
 }
 
 nav ul li a {
@@ -201,4 +201,72 @@ p {
   padding: 20px;
   width: 70%;
   float: left;
+}
+
+/* Formatação de toda a caixa "form" */
+form {
+  /* border: 1px solid red; */
+  width: 50%; /* tamanho da caixa */
+  margin-left: auto; /* Alinha a caixa no meio */
+  margin-right: auto;
+  padding: 10px; /* margem por dentro */
+  box-shadow: 0px 5px 10px silver;
+}
+
+label {
+  /* para dispor so elementotos em abaixo do outro utilizaremos
+  o comando display block */
+  display: block;
+  /* aplicar negrito usamos o comando font-weight com o valor bold */
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 16px;
+  /* border: 0; */
+  /* border-bottom: 1px solid silver; */
+  border-radius: 50px;
+  /* background-color: rgba(128, 24, 24, 0.9); */
+  /* color: rgb(248, 188, 23); */
+}
+
+input[type="tel"] {
+  width: 30%;
+}
+
+#sexo {
+  display: block;
+  margin-bottom: 15px;
+}
+
+select {
+  padding: 10px;
+  width: 20%;
+}
+
+select.option:hover {
+  background-color: rgb(241, 241, 46);
+  color: rgb(2, 65, 11);
+  cursor: white;
+  padding: 5px;
+}
+
+textarea {
+  width: 60%;
+  height: 200px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="submit"] {
+  display: block;
+  border: rgb(207, 124, 124);
+  color: white;
+  padding: 10px;
+  background-color: rgb(100, 0, 0);
+  cursor: pointer;
 }
