@@ -172,6 +172,10 @@ p {
 
 #contanier {
   display: inline-block;
+  /* border-bottom: 1px solid silver; */ /* aplicando linha no final da paginga */
+  margin-bottom: 50px;
+  padding-bottom: 6px; /* Aplicando a a caixa mais para baixo */
+  box-shadow: 0px 5px 10px silver; /* Adicionar Sombra nas bordas*/
 }
 
 #linha {
